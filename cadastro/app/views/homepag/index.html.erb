@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+
+    <nav class="topnav fixed-top">
+     <div class="div1">
+       <h1 class="toptext"> Cadastro de Alunos </h1>
+       <%= image_tag "user/User.png" , class:"img-user"%>
+     </div>
+   </nav>
+
+   <section>
+     <table class="table">
+       <thead class="table-inverse">
+         <tr>
+           <th>Nome</th>
+           <th>Nacionalidade</th>
+           <th>Idade</th>
+           <th colspan="3"></th>
+         </tr>
+       </thead>
+
+       <tbody>
+         <% @alunos.each do |aluno| %>
+           <tr>
+             <td><%= aluno.nome %></td>
+             <td><%= aluno.nacionalidade %></td>
+             <td><%= aluno.idade %></td>
+
+             <td><%= link_to 'Ver', aluno, class:"btn-user btn btn-warning" %></td>
+             <td><%= link_to 'Editar', edit_aluno_path(aluno), class:"btn-user btn btn-success" %></td>
+             <td><%= link_to 'Excluir', aluno, method: :delete, class:"btn-user btn btn-danger", data: { confirm: 'Tem certeza que deseja EXCLUIR ?' } %></td>
+           </tr>
+         <% end %>
+       </tbody>
+     </table>
+   </section>
+
+   <section class="add-aluno">
+     <div>
+       <%= link_to "Novo Aluno", new_aluno_path, class:"link-add btn btn-primary" %>
+     </div>
+   <section>
+
+  </body>
+
+</html>

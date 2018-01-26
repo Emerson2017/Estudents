@@ -1,0 +1,75 @@
+// Place all the styles related to the alunos controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+section{
+  font-family: PTserif;
+  text-align: center;
+}
+.box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.form{
+  margin-top: 40px;
+  font-size: 16px;
+}
+
+#aluno_nome{
+  margin: 15px;
+  width: 250px;
+
+}
+#aluno_idade{
+  margin: 15px;
+  width: 250px;
+}
+#aluno_nacionalidade{
+  margin: 15px;
+}
+
+.useradd, .useredit{
+  width: 100px;
+  height: 100px;
+}
+.head-aluno{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.head-aluno h1{
+  font-family: Lobster !important;
+}
+
+.table-view{
+  margin-top: 20px;
+}
+
+.retornar{
+  text-align: center;
+  margin-top: 100px !important;
+}
+
+.btn-retornar{
+  color: white !important;
+}
+
+.btn-retornar:hover{
+  color:white;
+  background-color: transparent !important;
+  text-decoration: none;
+}
+
+.aluno-view{
+  text-align: center;
+}
+
+.aluno-view h2{
+  font-family: Lobster;
+
+}

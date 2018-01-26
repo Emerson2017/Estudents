@@ -1,0 +1,29 @@
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+<div class="aluno-view">
+  <h2>Visualizar Aluno</h2>
+</div>
+
+<table class="table table-view">
+  <thead class="table-inverse">
+    <tr>
+      <th>Nome</th>
+      <th>Nacionalidade</th>
+      <th>Idade</th>
+      <th colspan="4"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+      <tr>
+        <td><%= @aluno.nome %></td>
+        <td><%= @aluno.nacionalidade %></td>
+        <td><%= @aluno.idade %></td>
+
+      </tr>
+  </tbody>
+</table>
+
+<div class="retornar">
+  <button class="btn btn-primary"><%= link_to 'Voltar', homepag_index_path, class:"btn-retornar" %></button>
+</div>

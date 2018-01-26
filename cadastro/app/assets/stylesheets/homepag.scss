@@ -1,0 +1,51 @@
+.topnav{
+  background-color: #A9A9A9;
+  color: black !important;
+  font-size: 25px !important;
+  font-family: Lobster !important;
+  height: 110px !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.div1{
+text-align: center !important;
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 20px;
+
+}
+
+.toptext{
+  color: white;
+  font-size: 35px;
+}
+
+.img-user {
+  width: 75px;
+  height:75px;
+  margin-left: 15px;
+}
+
+.add-aluno{
+  margin-top: 50px;
+  text-align: center;
+
+}
+
+.link-add{
+  font-size: 15px;
+  color:white !important;
+}
+
+.btn-user{
+  color:white !important;
+  font-size: 13px;
+}
+
+th{
+  margin-left: 10px !important;
+}
